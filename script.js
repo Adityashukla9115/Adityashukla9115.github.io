@@ -1,4 +1,4 @@
-const  sideMenu = document.querySelector('aside');
+const  sideMenu = document.querySelector('left');
 const menuBtn = document.querySelector('#menu_bar');
 const closeBtn = document.querySelector('#close_btn');
 
