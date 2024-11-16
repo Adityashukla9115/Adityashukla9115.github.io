@@ -124,11 +124,11 @@ b{
 }
 
 
-/* aside */
- aside{
+/* left */
+ left{
   height: 100vh;
  }
- aside .top{
+ left .top{
   background: var(--clr-white);
   display: flex;
   align-items: center;
@@ -136,15 +136,15 @@ b{
   margin-top: 1.4rem;
  }
 
- aside .logo{
+ left .logo{
    display: flex;
    gap: 1rem;
  }
- aside .logo img{
+ left .logo img{
    width: 2rem;
    height: 2rem;
  }
- aside .top div.close span{
+ left .top div.close span{
    display: none;
  }
 
@@ -152,7 +152,7 @@ b{
  Sidebar
  ================== */
 
- aside .sidebar{
+ left .sidebar{
   background: var(--clr-white);
   display: flex;
   flex-direction: column;
@@ -161,11 +161,11 @@ b{
   top: 1rem;
  }
 
- aside h3{
+ left h3{
   font-weight: 500;
  }
 
- aside .sidebar a{
+ left .sidebar a{
   display: flex;
   color: var(--clr-info-dark);
   margin-left: 2rem;
@@ -176,30 +176,30 @@ b{
  
  }
 
- aside .sidebar a span{
+ left .sidebar a span{
   font-size: 1.6rem;
   transition: all .3s ease-in-out;
   
  }
 
- aside .sidebar a:last-child{
+ left .sidebar a:last-child{
   position: absolute;
   bottom: 1rem; 
   width: 100%;
  }
 
- aside .sidebar a.active{
+ left .sidebar a.active{
    background-color: var(--clr-light);
    color: var(--clr-primary);
    margin-left: 0;
    border-left: 5px solid var(--clr-primary);
    margin-left: calc(1rem - 3px);
  }
- aside .sidebar a:hover span{
+ left .sidebar a:hover span{
   margin-left: 1rem;
  }
 
- aside .sidebar a span.msg_count{
+ left .sidebar a span.msg_count{
    background-color: var(--clr-danger);
    color: var(--clr-white);
    padding: 2px 5px;
@@ -542,13 +542,13 @@ MEDIA QUERY
       width: 94%;
       grid-template-columns: 7rem auto 14rem;
     }
-    aside .sidebar h3{
+    left .sidebar h3{
       display: none;
     }
-    aside .sidebar a{
+    left .sidebar a{
       width: 5.6rem;
     }
-    aside .sidebar a:last-child{
+    left .sidebar a:last-child{
       position: relative;
       margin-top: 1.8rem;
     }
