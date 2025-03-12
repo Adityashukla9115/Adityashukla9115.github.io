@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="forumTitle">Discussion Forum</h1>
+        </header>
+
+      
+        <div id="mainContent">
+            <div class="create-post">
+                <h2>Create New Post</h2>
+                <form id="postForm">
+                    <input type="text" id="postTitle" placeholder="Post Title" required>
+                    <textarea id="postContent" placeholder="Write your post here..." required></textarea>
+                    <select id="postCategory">
+                        <option value="general">General</option>
+                        <option value="technology">Technology</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="movies">Movies</option>
+                        <option value="sports">Sports</option>
+                        <option value="others">others</option>
+                    </select>
+                    <button type="submit">Create Post</button>
+                </form>
+            </div>
+
+            <div class="posts">
+                <h2>Recent Posts</h2>
+                <div id="postsList"></div>
+            </div>
+        </div>
+
+        <div id="postDetail" class="post-detail" style="display: none;">
+            <button id="backButton" class="back-button">← Back to Posts</button>
+            <div id="postDetailContent"></div>
+            
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <form id="commentForm" class="comment-form">
+                    <textarea id="commentContent" placeholder="Write your comment..." required></textarea>
+                    <button type="submit">Add Comment</button>
+                </form>
+                <div id="commentsList"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
